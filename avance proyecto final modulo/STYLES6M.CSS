@@ -1,0 +1,42 @@
+.menu {
+width: max-content;
+}
+.menu p {
+display: flex;
+width: 100px;
+padding: 10px;
+font-size: 25px;
+gap: 10px;
+box-sizing: border-box;
+}
+.menu p span {
+transform: rotate(90deg);
+font-family: monospace;
+}
+ul {
+position: absolute;
+width: 150px;
+background-color: rgba(0, 0, 0, 0.7);
+list-style: none;
+text-align: left;
+transition: all .3s;
+opacity: 0;
+visibility: hidden;
+}
+li a {
+display: flex;
+color: black;
+padding: 10px 0 10px 20px;
+font-size: 20px;
+text-decoration: none;
+box-sizing: border-box;
+transition: all .3s;
+}
+.menu p:hover ~ ul, ul:hover {
+opacity: 1;
+visibility: visible;
+}
+a:hover {
+background-color: rgba(0,0,0,0.555);
+color: rgb(255, 255, 255);
+}
